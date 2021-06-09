@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:clearTaskOnLaunch="true"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/LayoutForSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/editTextToPoisk"
+                android:layout_width="304dp"
+                android:layout_height="42dp"
+                android:ems="10"
+                android:hint="Поиск предмета"
+                android:inputType="textPersonName"></EditText>
+
+            <Button
+                android:id="@+id/buttonToPoisk"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="top|right"
+                android:background="@drawable/lupa" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/buttonToBkOtm"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/nazad" />
+
+                <Button
+                    android:id="@+id/buttonToDelTx"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="top|right"
+                    android:background="@drawable/musorka" />
+            </FrameLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LayoutForSearch">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/buttonToBackCl"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="top|right"
+                android:background="@drawable/button_nazad" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearMain"
+        android:layout_width="match_parent"
+        android:layout_height="464dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+        <ListView
+            android:id="@+id/ListVis"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#13567D">
+
+            <Button
+                android:id="@+id/buttonToInvin"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/button_inv_v_nem" />
+
+            <Button
+                android:id="@+id/buttonToBlocknod"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="top|center"
+                android:background="@drawable/button_blocknot" />
+
+            <Button
+                android:id="@+id/buttonToRashod"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="top|right"
+                android:background="@drawable/button_rashod" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toTopOf="@+id/LayoutForSearch"
+        tools:layout_editor_absoluteX="13dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
+        app:layout_constraintEnd_toEndOf="@+id/linearMain"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="top|right"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttoToAdd2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/plyus_spok" />
+
+            </LinearLayout>
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

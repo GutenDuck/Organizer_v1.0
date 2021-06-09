@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/LIner"
+android:layout_width="match_parent"
+android:layout_height="95dp"
+android:orientation="horizontal">
+
+<CheckBox
+    android:id="@+id/cbBoxRaz"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+</CheckBox>
+
+<LinearLayout
+    android:layout_width="240dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/TextNameRaz"
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="19dp"/>
+
+    <TextView
+        android:id="@+id/TextOsnovRaz"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="#000000"
+        android:textSize="11dp" />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/TextCenRaz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ценность"
+                android:textColor="#000000"
+                android:textSize="19dp" />
+
+            <TextView
+                android:id="@+id/TextValRaz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center"
+                android:textColor="#000000"
+                android:textSize="14dp" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InvintorADD">
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="230dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonBack2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/nazad" />
+
+                <Button
+                    android:id="@+id/buttonClear2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="top|right"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/lastik" />
+
+                <Button
+                    android:id="@+id/buttonToImg"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="top|right"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/kartinka" />
+                <Button
+                    android:id="@+id/buttonToImgDel"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="top|right"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/kartinka_udalenie" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/buttonSave2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="top|right"
+                android:background="@drawable/skhranit" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout8"
+        tools:layout_editor_absoluteX="0dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/TextZagolovok2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Название предмета"
+                    android:inputType="textPersonName"></EditText>
+
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="85dp"
+                    android:layout_height="59dp"
+                    android:ems="10"
+                    android:hint="Кол-во"
+                    android:inputType="number" />
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout9"
+        tools:layout_editor_absoluteX="0dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/TextOsnov2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="Описание"
+                android:inputType="textMultiLine"></EditText>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="top|center"
+                tools:srcCompat="@tools:sample/avatars[3]" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
